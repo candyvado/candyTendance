@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CEBA8CAC-7D25-46D8-BD61-37944B528839}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication2.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication2</RootNamespace>
+    <AssemblyName>WindowsApplication2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>G:\fingerCamCode\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>G:\fingerCamCode\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPDevNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\DigitalPersona-master\DigitalPersona-master\DigitalPersona\LIB - SDK Digital Persona\Bin\DPFPDevNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPEngNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=7fe76e7adf19964b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\DigitalPersona-master\DigitalPersona-master\DigitalPersona\LIB - SDK Digital Persona\Bin\DPFPEngNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\DigitalPersona-master\DigitalPersona-master\DigitalPersona\LIB - SDK Digital Persona\Bin\DPFPGuiNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\DigitalPersona-master\DigitalPersona-master\DigitalPersona\LIB - SDK Digital Persona\Bin\DPFPShrNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\DigitalPersona-master\DigitalPersona-master\DigitalPersona\LIB - SDK Digital Persona\Bin\DPFPVerNET.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>F:\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Downloads\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\adminrecord.Designer.vb">
+      <DependentUpon>adminrecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminrecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminfinishresetpassword.Designer.vb">
+      <DependentUpon>adminfinishresetpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminfinishresetpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminportal.Designer.vb">
+      <DependentUpon>adminportal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminportal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminlogin.Designer.vb">
+      <DependentUpon>adminlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminresetpassword.Designer.vb">
+      <DependentUpon>adminresetpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminresetpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\attendancerecord.Designer.vb">
+      <DependentUpon>attendancerecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\attendancerecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\markattendance.Designer.vb">
+      <DependentUpon>markattendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\markattendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\regstudent.Designer.vb">
+      <DependentUpon>regstudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\regstudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\regstudentfingerprint.Designer.vb">
+      <DependentUpon>regstudentfingerprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\regstudentfingerprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\setattendancetime.Designer.vb">
+      <DependentUpon>setattendancetime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\setattendancetime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\setchangepassword.Designer.vb">
+      <DependentUpon>setchangepassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\setchangepassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\setresetfingerprint.Designer.vb">
+      <DependentUpon>setresetfingerprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\setresetfingerprint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\setresetpassword.Designer.vb">
+      <DependentUpon>setresetpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\setresetpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\studentRecords.Designer.vb">
+      <DependentUpon>studentRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\studentRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\systemsettings.Designer.vb">
+      <DependentUpon>systemsettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\systemsettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\viewadminrecord.Designer.vb">
+      <DependentUpon>viewadminrecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\viewadminrecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="functions.vb" />
+    <Compile Include="index.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.vb">
+      <DependentUpon>index.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="overlay.Designer.vb">
+      <DependentUpon>overlay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="overlay.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\adminrecord.resx">
+      <DependentUpon>adminrecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminfinishresetpassword.resx">
+      <DependentUpon>adminfinishresetpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminportal.resx">
+      <DependentUpon>adminportal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminlogin.resx">
+      <DependentUpon>adminlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminresetpassword.resx">
+      <DependentUpon>adminresetpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\attendancerecord.resx">
+      <DependentUpon>attendancerecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\markattendance.resx">
+      <DependentUpon>markattendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\regstudent.resx">
+      <DependentUpon>regstudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\regstudentfingerprint.resx">
+      <DependentUpon>regstudentfingerprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\setattendancetime.resx">
+      <DependentUpon>setattendancetime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\setchangepassword.resx">
+      <DependentUpon>setchangepassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\setresetfingerprint.resx">
+      <DependentUpon>setresetfingerprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\setresetpassword.resx">
+      <DependentUpon>setresetpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\studentRecords.resx">
+      <DependentUpon>studentRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\systemsettings.resx">
+      <DependentUpon>systemsettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\viewadminrecord.resx">
+      <DependentUpon>viewadminrecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="overlay.resx">
+      <DependentUpon>overlay.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-secure-online-banking-and-mobile-payment-illustration-of-money-transfer-deposit-image_13548646.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-secure-online-banking-and-mobile-payment-illustration-of-money-transfer-deposit-image_135486461.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-money-saving-visualization-3d-rendering-of-transfers-to-shop-and-mobile-picture-image_4844963.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bg-1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bg-10.jpg" />
+    <Content Include="bg-11.jpg" />
+    <Content Include="bg-2.jpg" />
+    <Content Include="bg-3.jpg" />
+    <Content Include="bg-4.jpg" />
+    <Content Include="bg-5.jpg" />
+    <Content Include="bg-8.png" />
+    <Content Include="bg-9.jpg" />
+    <Content Include="Resources\eye.jpg" />
+    <None Include="Resources\hide.png" />
+    <None Include="Resources\eye.png" />
+    <Content Include="Resources\eyehide.png" />
+    <Content Include="Resources\eyeopen.png" />
+    <Content Include="Resources\eye_slash.png" />
+    <None Include="Resources\picToggleEye.png" />
+    <None Include="Resources\eye-slash.png.jpg" />
+    <None Include="Resources\icon10.png" />
+    <None Include="Resources\icon9.png" />
+    <None Include="Resources\clooooo.jpg" />
+    <None Include="Resources\clockie.jpeg" />
+    <None Include="Resources\clock.jpg" />
+    <None Include="Resources\delete4.jpeg" />
+    <None Include="Resources\delete3.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\password2.jpeg" />
+    <None Include="Resources\password.jpg" />
+    <None Include="Resources\fingerprint.jpg" />
+    <None Include="Resources\clock31.jpg" />
+    <None Include="Resources\clock3.jpg" />
+    <None Include="Resources\clock2.jpg" />
+    <None Include="Resources\icon8.png" />
+    <None Include="Resources\icon7.png" />
+    <None Include="Resources\icon6.png" />
+    <None Include="Resources\icon5.png" />
+    <None Include="Resources\icon4.png" />
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Places-user-identity.1281.png" />
+    <None Include="Resources\istockphoto-519825403-612x612.jpg" />
+    <None Include="Resources\icon3.png" />
+    <None Include="Resources\icon2.png" />
+    <None Include="Resources\icon1.png" />
+    <None Include="Resources\bg-8.png" />
+    <None Include="Resources\bg-9.jpg" />
+    <None Include="Resources\icon.png" />
+    <None Include="Resources\logo1.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\bg-7.jpg" />
+    <None Include="Resources\Biometric-Access-Control.png" />
+    <None Include="Resources\candy_bank_logo1.png" />
+    <None Include="Resources\candy_bank_logo.png" />
+    <None Include="Resources\pngtree-d-render-of-mobile-banking-online-money-transfer-as-coin-travels-image_3777619.jpg" />
+    <None Include="Resources\bg-6.png" />
+    <None Include="Resources\pngtree-d-illustration-of-a-blue-background-bank-building-featuring-spanish-text-picture-image_4791388.jpg" />
+    <None Include="Resources\world-bank-banner-on-office-building-and-world-map-video.jpg" />
+    <None Include="Resources\pngtree-e-commerce-concept-blank-mobile-and-golden-coins-in-3d-render-picture-image_3695887.jpg" />
+    <None Include="Resources\pngtree-person-s-hand-putting-gold-coins-into-a-smartphone-image_2614586.jpg" />
+    <None Include="Resources\5409308-middle5.png" />
+    <None Include="Resources\5409308-middle4.png" />
+    <None Include="Resources\5409308-middle3.png" />
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Places-user-identity.128.png" />
+    <None Include="Resources\pngtree-online-money-transfer-3d-render-of-mobile-banking-concept-with-coin-image_3777617.jpg" />
+    <None Include="Resources\pngtree-the-objective-of-earning-money-online-a-3d-rendering-picture-image_3702284.jpg" />
+    <None Include="Resources\5409308-middle2.png" />
+    <None Include="Resources\5409308-middle1.png" />
+    <None Include="Resources\5409308-middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="capturedimages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
