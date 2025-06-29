@@ -23,22 +23,31 @@ Partial Class adminportal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(adminportal))
         Me.Guna2Panel5 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.monthlyAttendancePieChart = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.attendanceBarChart = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Guna2Panel6 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel7 = New Guna.UI2.WinForms.Guna2Panel()
         Me.totalStudentLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel9 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.totalRecord = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.totalRecordLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel12 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel8 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.attendanceMarked = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.totalEnrollmentLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel10 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel10 = New Guna.UI2.WinForms.Guna2Panel()
         Me.totalAdminLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.enrollFingerPrintBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.settingsBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.attendanceRecordBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.viewAdminBtn = New Guna.UI2.WinForms.Guna2Button()
@@ -57,8 +66,9 @@ Partial Class adminportal
         Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.admin_log_out_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.enrollFingerPrintBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel5.SuspendLayout()
+        CType(Me.monthlyAttendancePieChart, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.attendanceBarChart, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel6.SuspendLayout()
         Me.Guna2Panel7.SuspendLayout()
         Me.Guna2Panel9.SuspendLayout()
@@ -78,12 +88,48 @@ Partial Class adminportal
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2Panel5.BorderRadius = 5
         Me.Guna2Panel5.BorderThickness = 1
+        Me.Guna2Panel5.Controls.Add(Me.monthlyAttendancePieChart)
+        Me.Guna2Panel5.Controls.Add(Me.attendanceBarChart)
         Me.Guna2Panel5.Controls.Add(Me.Guna2Panel6)
         Me.Guna2Panel5.Location = New System.Drawing.Point(196, 142)
         Me.Guna2Panel5.Name = "Guna2Panel5"
         Me.Guna2Panel5.ShadowDecoration.Parent = Me.Guna2Panel5
         Me.Guna2Panel5.Size = New System.Drawing.Size(1073, 346)
         Me.Guna2Panel5.TabIndex = 13
+        '
+        'monthlyAttendancePieChart
+        '
+        ChartArea1.Name = "ChartArea1"
+        Me.monthlyAttendancePieChart.ChartAreas.Add(ChartArea1)
+        Me.monthlyAttendancePieChart.Cursor = System.Windows.Forms.Cursors.Hand
+        Legend1.Name = "Legend1"
+        Me.monthlyAttendancePieChart.Legends.Add(Legend1)
+        Me.monthlyAttendancePieChart.Location = New System.Drawing.Point(737, 179)
+        Me.monthlyAttendancePieChart.Name = "monthlyAttendancePieChart"
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Me.monthlyAttendancePieChart.Series.Add(Series1)
+        Me.monthlyAttendancePieChart.Size = New System.Drawing.Size(390, 350)
+        Me.monthlyAttendancePieChart.TabIndex = 2
+        Me.monthlyAttendancePieChart.Text = "Chart1"
+        '
+        'attendanceBarChart
+        '
+        ChartArea2.Name = "ChartArea1"
+        Me.attendanceBarChart.ChartAreas.Add(ChartArea2)
+        Me.attendanceBarChart.Cursor = System.Windows.Forms.Cursors.Hand
+        Legend2.Name = "Legend1"
+        Me.attendanceBarChart.Legends.Add(Legend2)
+        Me.attendanceBarChart.Location = New System.Drawing.Point(19, 180)
+        Me.attendanceBarChart.Name = "attendanceBarChart"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.attendanceBarChart.Series.Add(Series2)
+        Me.attendanceBarChart.Size = New System.Drawing.Size(699, 350)
+        Me.attendanceBarChart.TabIndex = 1
+        Me.attendanceBarChart.Text = "Chart1"
         '
         'Guna2Panel6
         '
@@ -111,20 +157,20 @@ Partial Class adminportal
         Me.Guna2Panel7.Controls.Add(Me.Guna2HtmlLabel8)
         Me.Guna2Panel7.Cursor = System.Windows.Forms.Cursors.Default
         Me.Guna2Panel7.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Panel7.Location = New System.Drawing.Point(348, 17)
+        Me.Guna2Panel7.Location = New System.Drawing.Point(245, 17)
         Me.Guna2Panel7.Name = "Guna2Panel7"
         Me.Guna2Panel7.ShadowDecoration.Parent = Me.Guna2Panel7
-        Me.Guna2Panel7.Size = New System.Drawing.Size(216, 97)
+        Me.Guna2Panel7.Size = New System.Drawing.Size(261, 97)
         Me.Guna2Panel7.TabIndex = 4
         '
         'totalStudentLabel
         '
         Me.totalStudentLabel.BackColor = System.Drawing.Color.Transparent
-        Me.totalStudentLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalStudentLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.totalStudentLabel.ForeColor = System.Drawing.Color.White
         Me.totalStudentLabel.Location = New System.Drawing.Point(15, 31)
         Me.totalStudentLabel.Name = "totalStudentLabel"
-        Me.totalStudentLabel.Size = New System.Drawing.Size(12, 20)
+        Me.totalStudentLabel.Size = New System.Drawing.Size(19, 33)
         Me.totalStudentLabel.TabIndex = 3
         Me.totalStudentLabel.Text = "0"
         '
@@ -135,15 +181,15 @@ Partial Class adminportal
         Me.Guna2HtmlLabel8.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(12, 8)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
-        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(122, 17)
+        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(113, 17)
         Me.Guna2HtmlLabel8.TabIndex = 2
-        Me.Guna2HtmlLabel8.Text = "TOTAL STUDENTS"
+        Me.Guna2HtmlLabel8.Text = "TOTAL STUDENT"
         '
         'Guna2Panel9
         '
         Me.Guna2Panel9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Guna2Panel9.BorderRadius = 5
-        Me.Guna2Panel9.Controls.Add(Me.totalRecord)
+        Me.Guna2Panel9.Controls.Add(Me.totalRecordLabel)
         Me.Guna2Panel9.Controls.Add(Me.Guna2HtmlLabel12)
         Me.Guna2Panel9.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2Panel9.Location = New System.Drawing.Point(809, 17)
@@ -152,52 +198,52 @@ Partial Class adminportal
         Me.Guna2Panel9.Size = New System.Drawing.Size(245, 97)
         Me.Guna2Panel9.TabIndex = 5
         '
-        'totalRecord
+        'totalRecordLabel
         '
-        Me.totalRecord.BackColor = System.Drawing.Color.Transparent
-        Me.totalRecord.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.totalRecord.ForeColor = System.Drawing.Color.White
-        Me.totalRecord.Location = New System.Drawing.Point(17, 31)
-        Me.totalRecord.Name = "totalRecord"
-        Me.totalRecord.Size = New System.Drawing.Size(12, 20)
-        Me.totalRecord.TabIndex = 7
-        Me.totalRecord.Text = "0"
+        Me.totalRecordLabel.BackColor = System.Drawing.Color.Transparent
+        Me.totalRecordLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalRecordLabel.ForeColor = System.Drawing.Color.White
+        Me.totalRecordLabel.Location = New System.Drawing.Point(17, 31)
+        Me.totalRecordLabel.Name = "totalRecordLabel"
+        Me.totalRecordLabel.Size = New System.Drawing.Size(19, 33)
+        Me.totalRecordLabel.TabIndex = 7
+        Me.totalRecordLabel.Text = "0"
         '
         'Guna2HtmlLabel12
         '
         Me.Guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel12.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel12.Location = New System.Drawing.Point(14, 8)
+        Me.Guna2HtmlLabel12.Location = New System.Drawing.Point(11, 8)
         Me.Guna2HtmlLabel12.Name = "Guna2HtmlLabel12"
-        Me.Guna2HtmlLabel12.Size = New System.Drawing.Size(116, 17)
+        Me.Guna2HtmlLabel12.Size = New System.Drawing.Size(200, 17)
         Me.Guna2HtmlLabel12.TabIndex = 6
-        Me.Guna2HtmlLabel12.Text = "TOTAL RECORDS"
+        Me.Guna2HtmlLabel12.Text = "TOTAL ATTENDANCE RECORD"
         '
         'Guna2Panel8
         '
         Me.Guna2Panel8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Guna2Panel8.BorderRadius = 5
-        Me.Guna2Panel8.Controls.Add(Me.attendanceMarked)
+        Me.Guna2Panel8.Controls.Add(Me.totalEnrollmentLabel)
         Me.Guna2Panel8.Controls.Add(Me.Guna2HtmlLabel10)
         Me.Guna2Panel8.Cursor = System.Windows.Forms.Cursors.Default
         Me.Guna2Panel8.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2Panel8.Location = New System.Drawing.Point(581, 17)
+        Me.Guna2Panel8.Location = New System.Drawing.Point(528, 17)
         Me.Guna2Panel8.Name = "Guna2Panel8"
         Me.Guna2Panel8.ShadowDecoration.Parent = Me.Guna2Panel8
-        Me.Guna2Panel8.Size = New System.Drawing.Size(212, 97)
+        Me.Guna2Panel8.Size = New System.Drawing.Size(261, 97)
         Me.Guna2Panel8.TabIndex = 2
         '
-        'attendanceMarked
+        'totalEnrollmentLabel
         '
-        Me.attendanceMarked.BackColor = System.Drawing.Color.Transparent
-        Me.attendanceMarked.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.attendanceMarked.ForeColor = System.Drawing.Color.White
-        Me.attendanceMarked.Location = New System.Drawing.Point(17, 31)
-        Me.attendanceMarked.Name = "attendanceMarked"
-        Me.attendanceMarked.Size = New System.Drawing.Size(12, 20)
-        Me.attendanceMarked.TabIndex = 5
-        Me.attendanceMarked.Text = "0"
+        Me.totalEnrollmentLabel.BackColor = System.Drawing.Color.Transparent
+        Me.totalEnrollmentLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalEnrollmentLabel.ForeColor = System.Drawing.Color.White
+        Me.totalEnrollmentLabel.Location = New System.Drawing.Point(17, 31)
+        Me.totalEnrollmentLabel.Name = "totalEnrollmentLabel"
+        Me.totalEnrollmentLabel.Size = New System.Drawing.Size(19, 33)
+        Me.totalEnrollmentLabel.TabIndex = 5
+        Me.totalEnrollmentLabel.Text = "0"
         '
         'Guna2HtmlLabel10
         '
@@ -206,9 +252,9 @@ Partial Class adminportal
         Me.Guna2HtmlLabel10.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel10.Location = New System.Drawing.Point(14, 8)
         Me.Guna2HtmlLabel10.Name = "Guna2HtmlLabel10"
-        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(154, 17)
+        Me.Guna2HtmlLabel10.Size = New System.Drawing.Size(143, 17)
         Me.Guna2HtmlLabel10.TabIndex = 4
-        Me.Guna2HtmlLabel10.Text = "ATTENDANCE MARKED"
+        Me.Guna2HtmlLabel10.Text = "TOTAL ENROLLMENT"
         '
         'Guna2Panel10
         '
@@ -221,17 +267,17 @@ Partial Class adminportal
         Me.Guna2Panel10.Location = New System.Drawing.Point(-22, 17)
         Me.Guna2Panel10.Name = "Guna2Panel10"
         Me.Guna2Panel10.ShadowDecoration.Parent = Me.Guna2Panel10
-        Me.Guna2Panel10.Size = New System.Drawing.Size(350, 97)
+        Me.Guna2Panel10.Size = New System.Drawing.Size(245, 97)
         Me.Guna2Panel10.TabIndex = 3
         '
         'totalAdminLabel
         '
         Me.totalAdminLabel.BackColor = System.Drawing.Color.Transparent
-        Me.totalAdminLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalAdminLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.totalAdminLabel.ForeColor = System.Drawing.Color.White
         Me.totalAdminLabel.Location = New System.Drawing.Point(17, 31)
         Me.totalAdminLabel.Name = "totalAdminLabel"
-        Me.totalAdminLabel.Size = New System.Drawing.Size(12, 20)
+        Me.totalAdminLabel.Size = New System.Drawing.Size(19, 33)
         Me.totalAdminLabel.TabIndex = 1
         Me.totalAdminLabel.Text = "0"
         '
@@ -263,6 +309,27 @@ Partial Class adminportal
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
         Me.Guna2Panel2.Size = New System.Drawing.Size(184, 438)
         Me.Guna2Panel2.TabIndex = 12
+        '
+        'enrollFingerPrintBtn
+        '
+        Me.enrollFingerPrintBtn.BackColor = System.Drawing.Color.Transparent
+        Me.enrollFingerPrintBtn.BorderColor = System.Drawing.Color.Transparent
+        Me.enrollFingerPrintBtn.BorderRadius = 5
+        Me.enrollFingerPrintBtn.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom
+        Me.enrollFingerPrintBtn.CheckedState.Parent = Me.enrollFingerPrintBtn
+        Me.enrollFingerPrintBtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.enrollFingerPrintBtn.CustomBorderColor = System.Drawing.Color.Transparent
+        Me.enrollFingerPrintBtn.CustomImages.Parent = Me.enrollFingerPrintBtn
+        Me.enrollFingerPrintBtn.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.enrollFingerPrintBtn.ForeColor = System.Drawing.Color.White
+        Me.enrollFingerPrintBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.enrollFingerPrintBtn.HoverState.Parent = Me.enrollFingerPrintBtn
+        Me.enrollFingerPrintBtn.Location = New System.Drawing.Point(4, 190)
+        Me.enrollFingerPrintBtn.Name = "enrollFingerPrintBtn"
+        Me.enrollFingerPrintBtn.ShadowDecoration.Parent = Me.enrollFingerPrintBtn
+        Me.enrollFingerPrintBtn.Size = New System.Drawing.Size(178, 61)
+        Me.enrollFingerPrintBtn.TabIndex = 12
+        Me.enrollFingerPrintBtn.Text = "Enrollment"
         '
         'settingsBtn
         '
@@ -513,27 +580,6 @@ Partial Class adminportal
         'Timer1
         '
         '
-        'enrollFingerPrintBtn
-        '
-        Me.enrollFingerPrintBtn.BackColor = System.Drawing.Color.Transparent
-        Me.enrollFingerPrintBtn.BorderColor = System.Drawing.Color.Transparent
-        Me.enrollFingerPrintBtn.BorderRadius = 5
-        Me.enrollFingerPrintBtn.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom
-        Me.enrollFingerPrintBtn.CheckedState.Parent = Me.enrollFingerPrintBtn
-        Me.enrollFingerPrintBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.enrollFingerPrintBtn.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.enrollFingerPrintBtn.CustomImages.Parent = Me.enrollFingerPrintBtn
-        Me.enrollFingerPrintBtn.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.enrollFingerPrintBtn.ForeColor = System.Drawing.Color.White
-        Me.enrollFingerPrintBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.enrollFingerPrintBtn.HoverState.Parent = Me.enrollFingerPrintBtn
-        Me.enrollFingerPrintBtn.Location = New System.Drawing.Point(4, 190)
-        Me.enrollFingerPrintBtn.Name = "enrollFingerPrintBtn"
-        Me.enrollFingerPrintBtn.ShadowDecoration.Parent = Me.enrollFingerPrintBtn
-        Me.enrollFingerPrintBtn.Size = New System.Drawing.Size(178, 61)
-        Me.enrollFingerPrintBtn.TabIndex = 12
-        Me.enrollFingerPrintBtn.Text = "Enrollment"
-        '
         'adminportal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -551,6 +597,8 @@ Partial Class adminportal
         Me.Text = "adminportal"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Guna2Panel5.ResumeLayout(False)
+        CType(Me.monthlyAttendancePieChart, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.attendanceBarChart, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2Panel6.ResumeLayout(False)
         Me.Guna2Panel7.ResumeLayout(False)
         Me.Guna2Panel7.PerformLayout()
@@ -576,10 +624,10 @@ Partial Class adminportal
     Friend WithEvents totalStudentLabel As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel9 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents totalRecord As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents totalRecordLabel As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel12 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel8 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents attendanceMarked As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents totalEnrollmentLabel As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel10 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel10 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents totalAdminLabel As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -604,4 +652,6 @@ Partial Class adminportal
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents settingsBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents enrollFingerPrintBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents attendanceBarChart As System.Windows.Forms.DataVisualization.Charting.Chart
+    Friend WithEvents monthlyAttendancePieChart As System.Windows.Forms.DataVisualization.Charting.Chart
 End Class

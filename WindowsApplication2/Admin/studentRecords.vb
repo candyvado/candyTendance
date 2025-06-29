@@ -12,7 +12,7 @@
 
     Private Sub studentRecords_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         functions.studentRecord()
-        'Dim result = functions.allCounts
-        'total_customer_count_label_txt.Text = allCounts.item2.ToString
+        Dim result = functions.allCounts
+        totalStudentCountLabel.Text = allCounts.item2.ToString
     End Sub
 End Class

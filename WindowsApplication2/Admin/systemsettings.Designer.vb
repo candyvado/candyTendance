@@ -28,21 +28,12 @@ Partial Class systemSettings
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Guna2CirclePictureBox4 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Me.clearAttendanceBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2CirclePictureBox3 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.resetPasswordBtn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2CirclePictureBox2 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Me.resetFingerprintBtn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Me.attendanceTimeBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GroupBox1.SuspendLayout()
-        CType(Me.Guna2CirclePictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2CirclePictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2CirclePictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'close_btn
@@ -106,64 +97,23 @@ Partial Class systemSettings
         '
         'Guna2GroupBox1
         '
-        Me.Guna2GroupBox1.Controls.Add(Me.Guna2CirclePictureBox4)
-        Me.Guna2GroupBox1.Controls.Add(Me.clearAttendanceBtn)
         Me.Guna2GroupBox1.Controls.Add(Me.Guna2CirclePictureBox3)
         Me.Guna2GroupBox1.Controls.Add(Me.resetPasswordBtn)
-        Me.Guna2GroupBox1.Controls.Add(Me.Guna2CirclePictureBox2)
-        Me.Guna2GroupBox1.Controls.Add(Me.resetFingerprintBtn)
-        Me.Guna2GroupBox1.Controls.Add(Me.Guna2CirclePictureBox1)
-        Me.Guna2GroupBox1.Controls.Add(Me.attendanceTimeBtn)
         Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
         Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.Guna2GroupBox1.Location = New System.Drawing.Point(29, 63)
         Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
         Me.Guna2GroupBox1.ShadowDecoration.Parent = Me.Guna2GroupBox1
-        Me.Guna2GroupBox1.Size = New System.Drawing.Size(328, 391)
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(328, 192)
         Me.Guna2GroupBox1.TabIndex = 36
         Me.Guna2GroupBox1.Text = "System Settings"
-        '
-        'Guna2CirclePictureBox4
-        '
-        Me.Guna2CirclePictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CirclePictureBox4.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CirclePictureBox4.Image = Global.WindowsApplication2.My.Resources.Resources.delete4
-        Me.Guna2CirclePictureBox4.Location = New System.Drawing.Point(50, 326)
-        Me.Guna2CirclePictureBox4.Name = "Guna2CirclePictureBox4"
-        Me.Guna2CirclePictureBox4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CirclePictureBox4.ShadowDecoration.Parent = Me.Guna2CirclePictureBox4
-        Me.Guna2CirclePictureBox4.Size = New System.Drawing.Size(37, 37)
-        Me.Guna2CirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2CirclePictureBox4.TabIndex = 61
-        Me.Guna2CirclePictureBox4.TabStop = False
-        '
-        'clearAttendanceBtn
-        '
-        Me.clearAttendanceBtn.BackColor = System.Drawing.SystemColors.Control
-        Me.clearAttendanceBtn.BorderColor = System.Drawing.Color.Transparent
-        Me.clearAttendanceBtn.BorderRadius = 5
-        Me.clearAttendanceBtn.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom
-        Me.clearAttendanceBtn.CheckedState.Parent = Me.clearAttendanceBtn
-        Me.clearAttendanceBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.clearAttendanceBtn.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.clearAttendanceBtn.CustomImages.Parent = Me.clearAttendanceBtn
-        Me.clearAttendanceBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.clearAttendanceBtn.ForeColor = System.Drawing.Color.White
-        Me.clearAttendanceBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.clearAttendanceBtn.HoverState.Parent = Me.clearAttendanceBtn
-        Me.clearAttendanceBtn.Location = New System.Drawing.Point(36, 310)
-        Me.clearAttendanceBtn.Name = "clearAttendanceBtn"
-        Me.clearAttendanceBtn.ShadowDecoration.Parent = Me.clearAttendanceBtn
-        Me.clearAttendanceBtn.Size = New System.Drawing.Size(263, 63)
-        Me.clearAttendanceBtn.TabIndex = 60
-        Me.clearAttendanceBtn.Text = "CLEAR ATTENDANCE"
         '
         'Guna2CirclePictureBox3
         '
         Me.Guna2CirclePictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2CirclePictureBox3.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2CirclePictureBox3.Image = Global.WindowsApplication2.My.Resources.Resources.password
-        Me.Guna2CirclePictureBox3.Location = New System.Drawing.Point(50, 243)
+        Me.Guna2CirclePictureBox3.Location = New System.Drawing.Point(45, 92)
         Me.Guna2CirclePictureBox3.Name = "Guna2CirclePictureBox3"
         Me.Guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CirclePictureBox3.ShadowDecoration.Parent = Me.Guna2CirclePictureBox3
@@ -186,88 +136,18 @@ Partial Class systemSettings
         Me.resetPasswordBtn.ForeColor = System.Drawing.Color.White
         Me.resetPasswordBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.resetPasswordBtn.HoverState.Parent = Me.resetPasswordBtn
-        Me.resetPasswordBtn.Location = New System.Drawing.Point(36, 228)
+        Me.resetPasswordBtn.Location = New System.Drawing.Point(31, 79)
         Me.resetPasswordBtn.Name = "resetPasswordBtn"
         Me.resetPasswordBtn.ShadowDecoration.Parent = Me.resetPasswordBtn
         Me.resetPasswordBtn.Size = New System.Drawing.Size(263, 63)
         Me.resetPasswordBtn.TabIndex = 58
         Me.resetPasswordBtn.Text = "RESET PASSWORD"
         '
-        'Guna2CirclePictureBox2
-        '
-        Me.Guna2CirclePictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CirclePictureBox2.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CirclePictureBox2.Image = Global.WindowsApplication2.My.Resources.Resources.fingerprint
-        Me.Guna2CirclePictureBox2.Location = New System.Drawing.Point(50, 158)
-        Me.Guna2CirclePictureBox2.Name = "Guna2CirclePictureBox2"
-        Me.Guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CirclePictureBox2.ShadowDecoration.Parent = Me.Guna2CirclePictureBox2
-        Me.Guna2CirclePictureBox2.Size = New System.Drawing.Size(37, 37)
-        Me.Guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2CirclePictureBox2.TabIndex = 57
-        Me.Guna2CirclePictureBox2.TabStop = False
-        '
-        'resetFingerprintBtn
-        '
-        Me.resetFingerprintBtn.BackColor = System.Drawing.SystemColors.Control
-        Me.resetFingerprintBtn.BorderColor = System.Drawing.Color.Transparent
-        Me.resetFingerprintBtn.BorderRadius = 5
-        Me.resetFingerprintBtn.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom
-        Me.resetFingerprintBtn.CheckedState.Parent = Me.resetFingerprintBtn
-        Me.resetFingerprintBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.resetFingerprintBtn.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.resetFingerprintBtn.CustomImages.Parent = Me.resetFingerprintBtn
-        Me.resetFingerprintBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.resetFingerprintBtn.ForeColor = System.Drawing.Color.White
-        Me.resetFingerprintBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.resetFingerprintBtn.HoverState.Parent = Me.resetFingerprintBtn
-        Me.resetFingerprintBtn.Location = New System.Drawing.Point(36, 146)
-        Me.resetFingerprintBtn.Name = "resetFingerprintBtn"
-        Me.resetFingerprintBtn.ShadowDecoration.Parent = Me.resetFingerprintBtn
-        Me.resetFingerprintBtn.Size = New System.Drawing.Size(263, 63)
-        Me.resetFingerprintBtn.TabIndex = 56
-        Me.resetFingerprintBtn.Text = "RESET FINGERPRINT"
-        '
-        'Guna2CirclePictureBox1
-        '
-        Me.Guna2CirclePictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CirclePictureBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2CirclePictureBox1.Image = Global.WindowsApplication2.My.Resources.Resources.clooooo
-        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(50, 76)
-        Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
-        Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CirclePictureBox1.ShadowDecoration.Parent = Me.Guna2CirclePictureBox1
-        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(37, 37)
-        Me.Guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2CirclePictureBox1.TabIndex = 55
-        Me.Guna2CirclePictureBox1.TabStop = False
-        '
-        'attendanceTimeBtn
-        '
-        Me.attendanceTimeBtn.BackColor = System.Drawing.SystemColors.Control
-        Me.attendanceTimeBtn.BorderColor = System.Drawing.Color.Transparent
-        Me.attendanceTimeBtn.BorderRadius = 5
-        Me.attendanceTimeBtn.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom
-        Me.attendanceTimeBtn.CheckedState.Parent = Me.attendanceTimeBtn
-        Me.attendanceTimeBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.attendanceTimeBtn.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.attendanceTimeBtn.CustomImages.Parent = Me.attendanceTimeBtn
-        Me.attendanceTimeBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.attendanceTimeBtn.ForeColor = System.Drawing.Color.White
-        Me.attendanceTimeBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.attendanceTimeBtn.HoverState.Parent = Me.attendanceTimeBtn
-        Me.attendanceTimeBtn.Location = New System.Drawing.Point(38, 62)
-        Me.attendanceTimeBtn.Name = "attendanceTimeBtn"
-        Me.attendanceTimeBtn.ShadowDecoration.Parent = Me.attendanceTimeBtn
-        Me.attendanceTimeBtn.Size = New System.Drawing.Size(261, 63)
-        Me.attendanceTimeBtn.TabIndex = 54
-        Me.attendanceTimeBtn.Text = "ATTENDANCE TIME"
-        '
         'systemSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(393, 471)
+        Me.ClientSize = New System.Drawing.Size(393, 281)
         Me.Controls.Add(Me.Guna2GroupBox1)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -280,10 +160,7 @@ Partial Class systemSettings
         Me.Guna2Panel1.PerformLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GroupBox1.ResumeLayout(False)
-        CType(Me.Guna2CirclePictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2CirclePictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2CirclePictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -292,12 +169,6 @@ Partial Class systemSettings
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
-    Friend WithEvents Guna2CirclePictureBox4 As Guna.UI2.WinForms.Guna2CirclePictureBox
-    Friend WithEvents clearAttendanceBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2CirclePictureBox3 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents resetPasswordBtn As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2CirclePictureBox2 As Guna.UI2.WinForms.Guna2CirclePictureBox
-    Friend WithEvents resetFingerprintBtn As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
-    Friend WithEvents attendanceTimeBtn As Guna.UI2.WinForms.Guna2Button
 End Class

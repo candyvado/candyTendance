@@ -26,7 +26,6 @@ Partial Class markAttendance
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(markAttendance))
         Me.Guna2GroupBox3 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.fingerScanBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.admin_profile_pic = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.startScanBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
@@ -88,33 +87,11 @@ Partial Class markAttendance
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.fingerScanBtn)
         Me.Panel2.Controls.Add(Me.admin_profile_pic)
         Me.Panel2.Location = New System.Drawing.Point(21, 48)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(268, 183)
         Me.Panel2.TabIndex = 5
-        '
-        'fingerScanBtn
-        '
-        Me.fingerScanBtn.BackColor = System.Drawing.SystemColors.Control
-        Me.fingerScanBtn.BorderColor = System.Drawing.Color.Transparent
-        Me.fingerScanBtn.BorderRadius = 5
-        Me.fingerScanBtn.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom
-        Me.fingerScanBtn.CheckedState.Parent = Me.fingerScanBtn
-        Me.fingerScanBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.fingerScanBtn.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.fingerScanBtn.CustomImages.Parent = Me.fingerScanBtn
-        Me.fingerScanBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fingerScanBtn.ForeColor = System.Drawing.Color.White
-        Me.fingerScanBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.fingerScanBtn.HoverState.Parent = Me.fingerScanBtn
-        Me.fingerScanBtn.Location = New System.Drawing.Point(22, 133)
-        Me.fingerScanBtn.Name = "fingerScanBtn"
-        Me.fingerScanBtn.ShadowDecoration.Parent = Me.fingerScanBtn
-        Me.fingerScanBtn.Size = New System.Drawing.Size(222, 42)
-        Me.fingerScanBtn.TabIndex = 6
-        Me.fingerScanBtn.Text = "SCAN FINGER"
         '
         'admin_profile_pic
         '
@@ -126,7 +103,7 @@ Partial Class markAttendance
         Me.admin_profile_pic.Location = New System.Drawing.Point(22, 11)
         Me.admin_profile_pic.Name = "admin_profile_pic"
         Me.admin_profile_pic.ShadowDecoration.Parent = Me.admin_profile_pic
-        Me.admin_profile_pic.Size = New System.Drawing.Size(222, 114)
+        Me.admin_profile_pic.Size = New System.Drawing.Size(222, 158)
         Me.admin_profile_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.admin_profile_pic.TabIndex = 0
         Me.admin_profile_pic.TabStop = False
@@ -190,9 +167,9 @@ Partial Class markAttendance
         Me.markAttendanceTimeSlot.ForeColor = System.Drawing.Color.Black
         Me.markAttendanceTimeSlot.Location = New System.Drawing.Point(299, 83)
         Me.markAttendanceTimeSlot.Name = "markAttendanceTimeSlot"
-        Me.markAttendanceTimeSlot.Size = New System.Drawing.Size(51, 15)
+        Me.markAttendanceTimeSlot.Size = New System.Drawing.Size(31, 15)
         Me.markAttendanceTimeSlot.TabIndex = 32
-        Me.markAttendanceTimeSlot.Text = "Time Slot"
+        Me.markAttendanceTimeSlot.Text = "-------"
         '
         'Guna2HtmlLabel7
         '
@@ -455,7 +432,7 @@ Partial Class markAttendance
         Me.markAttendanceRecordList.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader1, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader7})
         Me.markAttendanceRecordList.FullRowSelect = True
         Me.markAttendanceRecordList.GridLines = True
-        Me.markAttendanceRecordList.Location = New System.Drawing.Point(12, 230)
+        Me.markAttendanceRecordList.Location = New System.Drawing.Point(12, 229)
         Me.markAttendanceRecordList.Name = "markAttendanceRecordList"
         Me.markAttendanceRecordList.Size = New System.Drawing.Size(748, 231)
         Me.markAttendanceRecordList.TabIndex = 27
@@ -502,7 +479,7 @@ Partial Class markAttendance
         Me.lastResetLabel1.BackColor = System.Drawing.Color.Transparent
         Me.lastResetLabel1.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold)
         Me.lastResetLabel1.ForeColor = System.Drawing.Color.Black
-        Me.lastResetLabel1.Location = New System.Drawing.Point(371, 467)
+        Me.lastResetLabel1.Location = New System.Drawing.Point(351, 467)
         Me.lastResetLabel1.Name = "lastResetLabel1"
         Me.lastResetLabel1.Size = New System.Drawing.Size(89, 15)
         Me.lastResetLabel1.TabIndex = 30
@@ -513,7 +490,7 @@ Partial Class markAttendance
         Me.lastResetLabel.BackColor = System.Drawing.Color.Transparent
         Me.lastResetLabel.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold)
         Me.lastResetLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lastResetLabel.Location = New System.Drawing.Point(371, 488)
+        Me.lastResetLabel.Location = New System.Drawing.Point(351, 488)
         Me.lastResetLabel.Name = "lastResetLabel"
         Me.lastResetLabel.Size = New System.Drawing.Size(119, 15)
         Me.lastResetLabel.TabIndex = 31
@@ -581,7 +558,6 @@ Partial Class markAttendance
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents markAttendanceStatusLabel As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents markAttendanceTimeSlot As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents fingerScanBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents markAttendanceRecordList As System.Windows.Forms.ListView
     Friend WithEvents ColumnHeader2 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader

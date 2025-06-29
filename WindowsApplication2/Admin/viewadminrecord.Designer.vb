@@ -23,7 +23,7 @@ Partial Class viewadminrecord
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(viewadminrecord))
-        Me.total_staff_count_label_txt = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.totalAdminCountLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
@@ -48,16 +48,16 @@ Partial Class viewadminrecord
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'total_staff_count_label_txt
+        'totalAdminCountLabel
         '
-        Me.total_staff_count_label_txt.BackColor = System.Drawing.Color.Transparent
-        Me.total_staff_count_label_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.total_staff_count_label_txt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.total_staff_count_label_txt.Location = New System.Drawing.Point(515, 12)
-        Me.total_staff_count_label_txt.Name = "total_staff_count_label_txt"
-        Me.total_staff_count_label_txt.Size = New System.Drawing.Size(11, 17)
-        Me.total_staff_count_label_txt.TabIndex = 7
-        Me.total_staff_count_label_txt.Text = "0"
+        Me.totalAdminCountLabel.BackColor = System.Drawing.Color.Transparent
+        Me.totalAdminCountLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalAdminCountLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.totalAdminCountLabel.Location = New System.Drawing.Point(539, 12)
+        Me.totalAdminCountLabel.Name = "totalAdminCountLabel"
+        Me.totalAdminCountLabel.Size = New System.Drawing.Size(11, 17)
+        Me.totalAdminCountLabel.TabIndex = 7
+        Me.totalAdminCountLabel.Text = "0"
         '
         'Guna2HtmlLabel1
         '
@@ -79,7 +79,7 @@ Partial Class viewadminrecord
         Me.Guna2Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2Panel2.BackColor = System.Drawing.Color.Silver
-        Me.Guna2Panel2.Controls.Add(Me.total_staff_count_label_txt)
+        Me.Guna2Panel2.Controls.Add(Me.totalAdminCountLabel)
         Me.Guna2Panel2.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Guna2Panel2.Controls.Add(Me.back_btn)
         Me.Guna2Panel2.FillColor = System.Drawing.Color.Silver
@@ -94,7 +94,7 @@ Partial Class viewadminrecord
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(420, 14)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(439, 14)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(85, 15)
         Me.Guna2HtmlLabel2.TabIndex = 6
@@ -262,7 +262,7 @@ Partial Class viewadminrecord
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents total_staff_count_label_txt As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents totalAdminCountLabel As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents ColumnHeader11 As System.Windows.Forms.ColumnHeader
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel

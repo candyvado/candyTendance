@@ -130,11 +130,11 @@
   <data name="5409308-middle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5409308-middle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="eye-slash.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye-slash.png.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clock31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clock31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5409308-middle3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5409308-middle3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +145,11 @@
   <data name="bg-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="clooooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clooooo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="candy_bank_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\candy_bank_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clockie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clockie.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pngtree-e-commerce-concept-blank-mobile-and-golden-coins-in-3d-render-picture-image_3695887" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-e-commerce-concept-blank-mobile-and-golden-coins-in-3d-render-picture-image_3695887.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,11 +166,8 @@
   <data name="bg-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-the-objective-of-earning-money-online-a-3d-rendering-picture-image_3702284" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-the-objective-of-earning-money-online-a-3d-rendering-picture-image_3702284.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hide1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,26 +175,23 @@
   <data name="eyeopen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyeopen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pngtree-money-saving-visualization-3d-rendering-of-transfers-to-shop-and-mobile-picture-image_4844963" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-money-saving-visualization-3d-rendering-of-transfers-to-shop-and-mobile-picture-image_4844963.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5409308-middle5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5409308-middle5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-secure-online-banking-and-mobile-payment-illustration-of-money-transfer-deposit-image_135486461" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-secure-online-banking-and-mobile-payment-illustration-of-money-transfer-deposit-image_135486461.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="eyeopen3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyeopen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Oxygen-Icons.org-Oxygen-Places-user-identity.128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Oxygen-Icons.org-Oxygen-Places-user-identity.128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-online-money-transfer-3d-render-of-mobile-banking-concept-with-coin-image_3777617" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-online-money-transfer-3d-render-of-mobile-banking-concept-with-coin-image_3777617.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clock3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clock3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="world-bank-banner-on-office-building-and-world-map-video" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\world-bank-banner-on-office-building-and-world-map-video.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,8 +199,8 @@
   <data name="5409308-middle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5409308-middle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="istockphoto-519825403-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\istockphoto-519825403-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="password2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg-7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg-7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -213,9 +210,6 @@
   </data>
   <data name="icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyehide" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyehide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,14 +223,17 @@
   <data name="hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clock3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clock3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-person-s-hand-putting-gold-coins-into-a-smartphone-image_2614586" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-person-s-hand-putting-gold-coins-into-a-smartphone-image_2614586.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pngtree-d-illustration-of-a-blue-background-bank-building-featuring-spanish-text-picture-image_4791388" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-d-illustration-of-a-blue-background-bank-building-featuring-spanish-text-picture-image_4791388.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bg-9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg-9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="password2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fingerprint" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fingerprint.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,11 +247,11 @@
   <data name="Oxygen-Icons.org-Oxygen-Places-user-identity1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Oxygen-Icons.org-Oxygen-Places-user-identity.1281.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-person-s-hand-putting-gold-coins-into-a-smartphone-image_2614586" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-person-s-hand-putting-gold-coins-into-a-smartphone-image_2614586.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-secure-online-banking-and-mobile-payment-illustration-of-money-transfer-deposit-image_135486461" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-secure-online-banking-and-mobile-payment-illustration-of-money-transfer-deposit-image_135486461.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eyeopen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eyeopen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="istockphoto-519825403-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-519825403-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,14 +259,14 @@
   <data name="pngtree-secure-online-banking-and-mobile-payment-illustration-of-money-transfer-deposit-image_13548646" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-secure-online-banking-and-mobile-payment-illustration-of-money-transfer-deposit-image_13548646.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg-9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg-9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye-slash.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye-slash.png.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Oxygen-Icons.org-Oxygen-Places-user-identity.128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oxygen-Icons.org-Oxygen-Places-user-identity.128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="candy_bank_logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\candy_bank_logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,28 +280,34 @@
   <data name="clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-the-objective-of-earning-money-online-a-3d-rendering-picture-image_3702284" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-the-objective-of-earning-money-online-a-3d-rendering-picture-image_3702284.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-online-money-transfer-3d-render-of-mobile-banking-concept-with-coin-image_3777617" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-online-money-transfer-3d-render-of-mobile-banking-concept-with-coin-image_3777617.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hide2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5409308-middle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5409308-middle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="candy_bank_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\candy_bank_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clockie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clockie.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hide1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hide2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eyeopen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eyeopen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clooooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clooooo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Car Wash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Car Wash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -12,7 +12,7 @@
 
     Private Sub viewadminrecord_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         functions.staffRecord()
-        'Dim result = functions.allCounts
-        'total_staff_count_label_txt.Text = allCounts.item1.ToString
+        Dim result = functions.allCounts
+        totalAdminCountLabel.Text = allCounts.item1.ToString
     End Sub
 End Class

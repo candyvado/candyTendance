@@ -11,6 +11,7 @@ Public Class adminRecord
     Dim videoSource As VideoCaptureDevice
     Dim capturedImage As Bitmap
 
+
     Private Sub closeBtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles closeBtn.Click
         If videoSource IsNot Nothing AndAlso videoSource.IsRunning Then
             videoSource.SignalToStop()
@@ -30,8 +31,8 @@ Public Class adminRecord
         functions.getStaffID()
         functions.getRole()
         functions.getStatus()
-        'Dim result = functions.allCounts
-        'total_staff_count_label_txt.Text = allCounts.item1.ToString
+        Dim result = functions.allCounts
+        totalAdminCountLabel.Text = allCounts.item1.ToString
     End Sub
     Private Sub Video_NewFrame(ByVal sender As Object, ByVal eventArgs As NewFrameEventArgs)
         Dim img = CType(eventArgs.Frame.Clone(), Bitmap)
@@ -105,7 +106,7 @@ Public Class adminRecord
             End If
 
             ' Define folder and filename
-            Dim folderPath As String = "C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\capturedimages"
+            Dim folderPath As String = "C:\capturedimages"
             If Not IO.Directory.Exists(folderPath) Then
                 IO.Directory.CreateDirectory(folderPath)
             End If
@@ -173,8 +174,9 @@ Public Class adminRecord
             End If
         End If
 
-        'Dim updatedCounts = functions.allCounts()
-        'total_staff_count_label_txt.Text = updatedCounts.Item1.ToString
+        Dim updatedCounts = functions.allCounts()
+        totalAdminCountLabel.Text = updatedCounts.Item1.ToString
+        adminportal.totalAdminLabel.Text = updatedCounts.Item1.ToString()
     End Sub
 
 End Class

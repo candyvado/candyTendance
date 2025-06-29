@@ -23,14 +23,13 @@ Partial Class studentRecords
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(studentRecords))
-        Me.total_customer_count_label_txt = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.totalStudentCountLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.back_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.close_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -44,21 +43,22 @@ Partial Class studentRecords
         Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'total_customer_count_label_txt
+        'totalStudentCountLabel
         '
-        Me.total_customer_count_label_txt.BackColor = System.Drawing.Color.Transparent
-        Me.total_customer_count_label_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.total_customer_count_label_txt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.total_customer_count_label_txt.Location = New System.Drawing.Point(554, 13)
-        Me.total_customer_count_label_txt.Name = "total_customer_count_label_txt"
-        Me.total_customer_count_label_txt.Size = New System.Drawing.Size(11, 17)
-        Me.total_customer_count_label_txt.TabIndex = 7
-        Me.total_customer_count_label_txt.Text = "0"
+        Me.totalStudentCountLabel.BackColor = System.Drawing.Color.Transparent
+        Me.totalStudentCountLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalStudentCountLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.totalStudentCountLabel.Location = New System.Drawing.Point(554, 13)
+        Me.totalStudentCountLabel.Name = "totalStudentCountLabel"
+        Me.totalStudentCountLabel.Size = New System.Drawing.Size(11, 17)
+        Me.totalStudentCountLabel.TabIndex = 7
+        Me.totalStudentCountLabel.Text = "0"
         '
         'ColumnHeader4
         '
@@ -71,7 +71,7 @@ Partial Class studentRecords
         Me.Guna2Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2Panel2.BackColor = System.Drawing.Color.Silver
-        Me.Guna2Panel2.Controls.Add(Me.total_customer_count_label_txt)
+        Me.Guna2Panel2.Controls.Add(Me.totalStudentCountLabel)
         Me.Guna2Panel2.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Guna2Panel2.Controls.Add(Me.back_btn)
         Me.Guna2Panel2.FillColor = System.Drawing.Color.Silver
@@ -86,7 +86,7 @@ Partial Class studentRecords
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(427, 15)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(430, 15)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(106, 15)
         Me.Guna2HtmlLabel2.TabIndex = 6
@@ -137,19 +137,6 @@ Partial Class studentRecords
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(102, 17)
         Me.Guna2HtmlLabel1.TabIndex = 1
         Me.Guna2HtmlLabel1.Text = "Student Record"
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Guna2PictureBox1.Image = Global.WindowsApplication2.My.Resources.Resources.icon6
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(1, 2)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(38, 43)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox1.TabIndex = 0
-        Me.Guna2PictureBox1.TabStop = False
         '
         'close_btn
         '
@@ -245,6 +232,19 @@ Partial Class studentRecords
         Me.ColumnHeader10.Text = "UPDATED TIME"
         Me.ColumnHeader10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Guna2PictureBox1.Image = Global.WindowsApplication2.My.Resources.Resources.icon6
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(1, 2)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(38, 43)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox1.TabIndex = 0
+        Me.Guna2PictureBox1.TabStop = False
+        '
         'studentRecords
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -267,7 +267,7 @@ Partial Class studentRecords
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents total_customer_count_label_txt As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents totalStudentCountLabel As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents ColumnHeader4 As System.Windows.Forms.ColumnHeader
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel

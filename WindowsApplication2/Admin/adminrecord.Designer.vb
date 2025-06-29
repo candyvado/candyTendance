@@ -31,11 +31,10 @@ Partial Class adminRecord
         Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.profileId = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.closeBtn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.fetchBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.staffRoleIdComboBox = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.total_staff_count_label_txt = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.totalAdminCountLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.viewAdminRecordBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -51,6 +50,7 @@ Partial Class adminRecord
         Me.phoneNumberTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.emailAddressTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2GroupBox3.SuspendLayout()
         CType(Me.adminProfilePic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel2.SuspendLayout()
@@ -98,10 +98,11 @@ Partial Class adminRecord
         '
         'adminProfilePic
         '
-        Me.adminProfilePic.BackgroundImage = Global.WindowsApplication2.My.Resources.Resources.Oxygen_Icons_org_Oxygen_Places_user_identity_128
+        Me.adminProfilePic.BackgroundImage = Global.WindowsApplication2.My.Resources.Resources.Car_Wash
         Me.adminProfilePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.adminProfilePic.BorderRadius = 5
         Me.adminProfilePic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.adminProfilePic.Image = Global.WindowsApplication2.My.Resources.Resources.Car_Wash
         Me.adminProfilePic.Location = New System.Drawing.Point(21, 48)
         Me.adminProfilePic.Name = "adminProfilePic"
         Me.adminProfilePic.ShadowDecoration.Parent = Me.adminProfilePic
@@ -196,17 +197,6 @@ Partial Class adminRecord
         Me.closeBtn.TabIndex = 0
         Me.closeBtn.Text = "X"
         '
-        'Guna2HtmlLabel2
-        '
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(462, 13)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(85, 15)
-        Me.Guna2HtmlLabel2.TabIndex = 6
-        Me.Guna2HtmlLabel2.Text = "TOTAL STAFF"
-        '
         'fetchBtn
         '
         Me.fetchBtn.BackColor = System.Drawing.SystemColors.Control
@@ -260,16 +250,16 @@ Partial Class adminRecord
         Me.staffRoleIdComboBox.Size = New System.Drawing.Size(351, 36)
         Me.staffRoleIdComboBox.TabIndex = 13
         '
-        'total_staff_count_label_txt
+        'totalAdminCountLabel
         '
-        Me.total_staff_count_label_txt.BackColor = System.Drawing.Color.Transparent
-        Me.total_staff_count_label_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.total_staff_count_label_txt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.total_staff_count_label_txt.Location = New System.Drawing.Point(556, 13)
-        Me.total_staff_count_label_txt.Name = "total_staff_count_label_txt"
-        Me.total_staff_count_label_txt.Size = New System.Drawing.Size(11, 17)
-        Me.total_staff_count_label_txt.TabIndex = 7
-        Me.total_staff_count_label_txt.Text = "0"
+        Me.totalAdminCountLabel.BackColor = System.Drawing.Color.Transparent
+        Me.totalAdminCountLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalAdminCountLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.totalAdminCountLabel.Location = New System.Drawing.Point(556, 13)
+        Me.totalAdminCountLabel.Name = "totalAdminCountLabel"
+        Me.totalAdminCountLabel.Size = New System.Drawing.Size(11, 17)
+        Me.totalAdminCountLabel.TabIndex = 7
+        Me.totalAdminCountLabel.Text = "0"
         '
         'viewAdminRecordBtn
         '
@@ -297,8 +287,8 @@ Partial Class adminRecord
         Me.Guna2Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2Panel2.BackColor = System.Drawing.Color.Silver
-        Me.Guna2Panel2.Controls.Add(Me.total_staff_count_label_txt)
         Me.Guna2Panel2.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Guna2Panel2.Controls.Add(Me.totalAdminCountLabel)
         Me.Guna2Panel2.Controls.Add(Me.viewAdminRecordBtn)
         Me.Guna2Panel2.FillColor = System.Drawing.Color.Silver
         Me.Guna2Panel2.Location = New System.Drawing.Point(1, 48)
@@ -530,6 +520,17 @@ Partial Class adminRecord
         Me.Guna2GroupBox1.TabIndex = 21
         Me.Guna2GroupBox1.Text = "PROFILE ID"
         '
+        'Guna2HtmlLabel2
+        '
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(446, 12)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(90, 17)
+        Me.Guna2HtmlLabel2.TabIndex = 2
+        Me.Guna2HtmlLabel2.Text = "TOTAL STAFF"
+        '
         'adminRecord
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -570,11 +571,10 @@ Partial Class adminRecord
     Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents profileId As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents closeBtn As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents fetchBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents staffRoleIdComboBox As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents total_staff_count_label_txt As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents totalAdminCountLabel As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents viewAdminRecordBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -589,4 +589,5 @@ Partial Class adminRecord
     Friend WithEvents phoneNumberTxt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents emailAddressTxt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

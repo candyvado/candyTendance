@@ -87,6 +87,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -159,28 +160,10 @@
     <Compile Include="Admin\regstudentfingerprint.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\setattendancetime.Designer.vb">
-      <DependentUpon>setattendancetime.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\setattendancetime.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Admin\setchangepassword.Designer.vb">
       <DependentUpon>setchangepassword.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin\setchangepassword.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\setresetfingerprint.Designer.vb">
-      <DependentUpon>setresetfingerprint.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\setresetfingerprint.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\setresetpassword.Designer.vb">
-      <DependentUpon>setresetpassword.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\setresetpassword.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\studentRecords.Designer.vb">
@@ -263,17 +246,8 @@
     <EmbeddedResource Include="Admin\regstudentfingerprint.resx">
       <DependentUpon>regstudentfingerprint.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\setattendancetime.resx">
-      <DependentUpon>setattendancetime.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin\setchangepassword.resx">
       <DependentUpon>setchangepassword.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\setresetfingerprint.resx">
-      <DependentUpon>setresetfingerprint.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\setresetpassword.resx">
-      <DependentUpon>setresetpassword.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\studentRecords.resx">
       <DependentUpon>studentRecords.vb</DependentUpon>
@@ -335,6 +309,7 @@
     <Content Include="bg-5.jpg" />
     <Content Include="bg-8.png" />
     <Content Include="bg-9.jpg" />
+    <None Include="Resources\Car Wash.jpg" />
     <Content Include="Resources\eye.jpg" />
     <None Include="Resources\hide.png" />
     <None Include="Resources\eye.png" />

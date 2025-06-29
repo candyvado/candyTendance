@@ -33,20 +33,17 @@ Partial Class attendanceRecordForm
         Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.searchBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.attendanceDatePicker = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.attendanceSearchTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.closeBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.full_name_txt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.user_record_history = New System.Windows.Forms.ListView()
         Me.refreshBtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,7 +51,7 @@ Partial Class attendanceRecordForm
         '
         'attendanceListView
         '
-        Me.attendanceListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader1, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader11, Me.ColumnHeader12})
+        Me.attendanceListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader2, Me.ColumnHeader1, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9})
         Me.attendanceListView.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.attendanceListView.FullRowSelect = True
         Me.attendanceListView.GridLines = True
@@ -78,55 +75,44 @@ Partial Class attendanceRecordForm
         '
         'ColumnHeader3
         '
-        Me.ColumnHeader3.Text = "FULL NAME"
+        Me.ColumnHeader3.Text = "STATUS ID"
         Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader3.Width = 150
         '
         'ColumnHeader4
         '
-        Me.ColumnHeader4.Text = "EMAIL ADDRESS"
+        Me.ColumnHeader4.Text = "FULL NAME"
         Me.ColumnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader4.Width = 150
         '
         'ColumnHeader5
         '
-        Me.ColumnHeader5.Text = "GENDER"
+        Me.ColumnHeader5.Text = "EMAIL ADDRESS "
         Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader5.Width = 150
         '
         'ColumnHeader6
         '
-        Me.ColumnHeader6.Text = "PHONE NUMBER"
+        Me.ColumnHeader6.Text = "ATTENDANCE DATE"
         Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader6.Width = 150
         '
         'ColumnHeader7
         '
-        Me.ColumnHeader7.Text = "HOME ADDRESS"
+        Me.ColumnHeader7.Text = "CHECK - IN"
         Me.ColumnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader7.Width = 150
         '
         'ColumnHeader8
         '
-        Me.ColumnHeader8.Text = "PASSPORT"
+        Me.ColumnHeader8.Text = "CHECK - OUT"
         Me.ColumnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader8.Width = 150
         '
         'ColumnHeader9
         '
-        Me.ColumnHeader9.Text = "COURSE"
-        '
-        'ColumnHeader10
-        '
-        Me.ColumnHeader10.Text = "DATE"
-        '
-        'ColumnHeader11
-        '
-        Me.ColumnHeader11.Text = "CHECK IN"
-        '
-        'ColumnHeader12
-        '
-        Me.ColumnHeader12.Text = "CHECK OUT"
+        Me.ColumnHeader9.Text = "CLOCK STATUS"
+        Me.ColumnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Guna2Panel2
         '
@@ -199,7 +185,7 @@ Partial Class attendanceRecordForm
         Me.attendanceSearchTxt.Location = New System.Drawing.Point(15, 7)
         Me.attendanceSearchTxt.Name = "attendanceSearchTxt"
         Me.attendanceSearchTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.attendanceSearchTxt.PlaceholderText = "Type Full Name"
+        Me.attendanceSearchTxt.PlaceholderText = "Type Email Address"
         Me.attendanceSearchTxt.SelectedText = ""
         Me.attendanceSearchTxt.ShadowDecoration.Parent = Me.attendanceSearchTxt
         Me.attendanceSearchTxt.Size = New System.Drawing.Size(202, 38)
@@ -228,19 +214,6 @@ Partial Class attendanceRecordForm
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(610, 48)
         Me.Guna2Panel1.TabIndex = 27
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Guna2PictureBox1.Image = Global.WindowsApplication2.My.Resources.Resources.icon5
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(1, 2)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(38, 43)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox1.TabIndex = 0
-        Me.Guna2PictureBox1.TabStop = False
         '
         'closeBtn
         '
@@ -322,6 +295,19 @@ Partial Class attendanceRecordForm
         Me.refreshBtn.TabIndex = 24
         Me.refreshBtn.Text = "REFRESH"
         '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Guna2PictureBox1.Image = Global.WindowsApplication2.My.Resources.Resources.icon5
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(1, 2)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(38, 43)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox1.TabIndex = 0
+        Me.Guna2PictureBox1.TabStop = False
+        '
         'attendanceRecordForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -362,9 +348,6 @@ Partial Class attendanceRecordForm
     Friend WithEvents attendanceSearchTxt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents searchBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ColumnHeader9 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader10 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader11 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader12 As System.Windows.Forms.ColumnHeader
     Friend WithEvents full_name_txt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents user_record_history As System.Windows.Forms.ListView
     Friend WithEvents refreshBtn As Guna.UI2.WinForms.Guna2Button

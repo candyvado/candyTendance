@@ -14,47 +14,42 @@ Public Class setChangePassword
 
     Private Sub oldPasswordToggle_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles oldPasswordToggle.Click
         If passwordVisible Then
-            ' 🔒 Hide password
+
             oldPasswordTxt.UseSystemPasswordChar = True
             oldPasswordToggle.Image = My.Resources.eyehide
-            ' Replace with your hidden eye image
             passwordVisible = False
         Else
-            ' 👁️ Show password
+
             oldPasswordTxt.UseSystemPasswordChar = False
-            oldPasswordToggle.Image = My.Resources.eyeopen ' Replace with your open eye image
+            oldPasswordToggle.Image = My.Resources.eyeopen
             passwordVisible = True
         End If
     End Sub
 
     Private Sub newPasswordToggle_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles newPasswordToggle.Click
         If passwordVisible Then
-            ' 🔒 Hide password
+
             newPasswordTxt.UseSystemPasswordChar = True
             newPasswordToggle.Image = My.Resources.eyehide
-            ' Replace with your hidden eye image
             passwordVisible = False
         Else
-            ' 👁️ Show password
+
             newPasswordTxt.UseSystemPasswordChar = False
             newPasswordToggle.Image = My.Resources.eyeopen
-            ' Replace with your open eye image
             passwordVisible = True
         End If
     End Sub
 
     Private Sub confirmPasswordToggle_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles confirmPasswordToggle.Click
         If passwordVisible Then
-            ' 🔒 Hide password
+
             confirmPasswordTxt.UseSystemPasswordChar = True
             confirmPasswordToggle.Image = My.Resources.eyehide
-            ' Replace with your hidden eye image
             passwordVisible = False
         Else
-            ' 👁️ Show password
+
             confirmPasswordTxt.UseSystemPasswordChar = False
             confirmPasswordToggle.Image = My.Resources.eyeopen
-            ' Replace with your open eye image
             passwordVisible = True
         End If
     End Sub
@@ -66,7 +61,7 @@ Public Class setChangePassword
         Else
             Dim connection = functions.connection
             Dim result = functions.getStaffProfile(adminlogin.loginStaffId)
-            Dim old_password = result.item6.ToString
+            Dim old_password = result.item4.ToString
 
             If old_password = oldPasswordTxt.Text Then
                 If newPasswordTxt.Text = confirmPasswordTxt.Text Then
@@ -88,4 +83,5 @@ Public Class setChangePassword
             End If
         End If
     End Sub
+
 End Class

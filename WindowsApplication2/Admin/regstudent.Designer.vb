@@ -23,9 +23,8 @@ Partial Class regStudent
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(regStudent))
-        Me.total_customer_count_label_txt = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.totalStudentCountLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.viewRecBtn = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
@@ -53,6 +52,7 @@ Partial Class regStudent
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.fetch_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.studentProfileId = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2.SuspendLayout()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,16 +63,16 @@ Partial Class regStudent
         Me.Guna2GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'total_customer_count_label_txt
+        'totalStudentCountLabel
         '
-        Me.total_customer_count_label_txt.BackColor = System.Drawing.Color.Transparent
-        Me.total_customer_count_label_txt.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.total_customer_count_label_txt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.total_customer_count_label_txt.Location = New System.Drawing.Point(575, 13)
-        Me.total_customer_count_label_txt.Name = "total_customer_count_label_txt"
-        Me.total_customer_count_label_txt.Size = New System.Drawing.Size(11, 17)
-        Me.total_customer_count_label_txt.TabIndex = 7
-        Me.total_customer_count_label_txt.Text = "0"
+        Me.totalStudentCountLabel.BackColor = System.Drawing.Color.Transparent
+        Me.totalStudentCountLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalStudentCountLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.totalStudentCountLabel.Location = New System.Drawing.Point(575, 13)
+        Me.totalStudentCountLabel.Name = "totalStudentCountLabel"
+        Me.totalStudentCountLabel.Size = New System.Drawing.Size(11, 17)
+        Me.totalStudentCountLabel.TabIndex = 7
+        Me.totalStudentCountLabel.Text = "0"
         '
         'viewRecBtn
         '
@@ -95,17 +95,6 @@ Partial Class regStudent
         Me.viewRecBtn.TabIndex = 4
         Me.viewRecBtn.Text = "VIEW RECORD"
         '
-        'Guna2HtmlLabel2
-        '
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(440, 15)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(106, 15)
-        Me.Guna2HtmlLabel2.TabIndex = 6
-        Me.Guna2HtmlLabel2.Text = "TOTAL STUDENT"
-        '
         'Guna2HtmlLabel1
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
@@ -121,8 +110,8 @@ Partial Class regStudent
         Me.Guna2Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2Panel2.BackColor = System.Drawing.Color.Silver
-        Me.Guna2Panel2.Controls.Add(Me.total_customer_count_label_txt)
         Me.Guna2Panel2.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Guna2Panel2.Controls.Add(Me.totalStudentCountLabel)
         Me.Guna2Panel2.Controls.Add(Me.viewRecBtn)
         Me.Guna2Panel2.FillColor = System.Drawing.Color.Silver
         Me.Guna2Panel2.Location = New System.Drawing.Point(1, 47)
@@ -444,10 +433,11 @@ Partial Class regStudent
         '
         'studentProfilePic
         '
-        Me.studentProfilePic.BackgroundImage = Global.WindowsApplication2.My.Resources.Resources.Oxygen_Icons_org_Oxygen_Places_user_identity_128
+        Me.studentProfilePic.BackgroundImage = Global.WindowsApplication2.My.Resources.Resources.Car_Wash
         Me.studentProfilePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.studentProfilePic.BorderRadius = 5
         Me.studentProfilePic.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.studentProfilePic.Image = Global.WindowsApplication2.My.Resources.Resources.Car_Wash
         Me.studentProfilePic.Location = New System.Drawing.Point(17, 53)
         Me.studentProfilePic.Name = "studentProfilePic"
         Me.studentProfilePic.ShadowDecoration.Parent = Me.studentProfilePic
@@ -566,6 +556,17 @@ Partial Class regStudent
         Me.studentProfileId.Size = New System.Drawing.Size(560, 36)
         Me.studentProfileId.TabIndex = 8
         '
+        'Guna2HtmlLabel2
+        '
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(440, 13)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(113, 17)
+        Me.Guna2HtmlLabel2.TabIndex = 8
+        Me.Guna2HtmlLabel2.Text = "TOTAL STUDENT"
+        '
         'regStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -597,10 +598,9 @@ Partial Class regStudent
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents total_customer_count_label_txt As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents totalStudentCountLabel As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents viewRecBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
@@ -627,4 +627,5 @@ Partial Class regStudent
     Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
     Friend WithEvents fetch_btn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents studentProfileId As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

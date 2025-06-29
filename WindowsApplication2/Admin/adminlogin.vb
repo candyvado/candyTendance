@@ -5,8 +5,8 @@ Public Class adminlogin
     Dim command As MySqlCommand
     Dim query As String
     Dim passwordVisible As Boolean = False
-    ' Login-related fields
-    Public loginStaffId, loginRoleId, loginStatusId As String ' Staff ID of the logged-in user
+
+    Public loginStaffId, loginRoleId, loginStatusId As String
 
     Private Sub close_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles close_btn.Click
         Me.Close()
@@ -47,7 +47,6 @@ Public Class adminlogin
                             reader = command.ExecuteReader
                             connection.Close()
 
-                            ' Fetch and display staff profile after successful login
                             Dim result = functions.getStaffProfile(loginStaffId)
                             Dim arrimage() As Byte = result.item3
                             adminportal.staffFullNameLabelTxt.Text = result.item1.ToString
@@ -70,7 +69,6 @@ Public Class adminlogin
         End If
     End Sub
 
-
     Private Sub forgot_password_label_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles forgotPasswordLabel.LinkClicked
         Me.Hide()
         overlay.Hide()
@@ -79,16 +77,18 @@ Public Class adminlogin
 
     Private Sub loginPasswordToggle_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles loginPasswordToggle.Click
         If passwordVisible Then
-            ' 🔒 Hide password
             loginPasswordTxt.UseSystemPasswordChar = True
-            loginPasswordToggle.Image = My.Resources.eyehide ' Replace with your hidden eye image
+            loginPasswordToggle.Image = My.Resources.eyehide
             passwordVisible = False
         Else
-            ' 👁️ Show password
+
             loginPasswordTxt.UseSystemPasswordChar = False
-            loginPasswordToggle.Image = My.Resources.eyeopen ' Replace with your open eye image
+            loginPasswordToggle.Image = My.Resources.eyeopen
             passwordVisible = True
         End If
     End Sub
 
+    Private Sub adminlogin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

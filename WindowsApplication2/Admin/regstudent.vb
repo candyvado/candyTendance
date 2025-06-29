@@ -22,13 +22,12 @@ Public Class regStudent
 
     Private Sub regStudent_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         functions.getStudentID()
-        'functions.getStudentRole()
         functions.getStatus()
         functions.getProgramme()
         functions.getGender()
 
-        'Dim result = functions.allCounts
-        'total_staff_count_label_txt.Text = allCounts.item1.ToString
+        Dim result = functions.allCounts
+        totalStudentCountLabel.Text = allCounts.item2.ToString
     End Sub
 
     Private Sub viewRecBtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles viewRecBtn.Click
@@ -52,7 +51,7 @@ Public Class regStudent
             End If
 
             ' Define folder and filename
-            Dim folderPath As String = "C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\capturedimages"
+            Dim folderPath As String = "C:\capturedimages"
             If Not IO.Directory.Exists(folderPath) Then
                 IO.Directory.CreateDirectory(folderPath)
             End If
@@ -133,8 +132,9 @@ Public Class regStudent
             End If
         End If
 
-        'Dim updatedCounts = functions.allCounts()
-        'total_student_count_label_txt.Text = updatedCounts.Item1.ToString
+        Dim updatedCounts = functions.allCounts()
+        totalStudentCountLabel.Text = updatedCounts.Item2.ToString
+        adminportal.totalStudentLabel.Text = updatedCounts.Item2.ToString()
     End Sub
 
     Private Sub fetch_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles fetch_btn.Click

@@ -67,6 +67,10 @@ WindowsApplication2
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:WindowsApplication2.My.Resources.Resources.Car_Wash">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:WindowsApplication2.My.Resources.Resources.clock">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

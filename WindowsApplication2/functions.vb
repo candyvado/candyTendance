@@ -160,7 +160,7 @@ Module functions
         regStudentfingerprint.studentProfilePic.Image = Nothing
         regstudentfingerprint.studentFingerPrintTemplate.Image = Nothing
 
-        regstudentfingerprint.scanProgressBar.Value = 0
+        regstudentfingerprint.enrollProgressBar.Value = 0
         regstudentfingerprint.enrollStatusLabel.Text = "Click Enroll Button To Begin"
 
 
@@ -177,8 +177,9 @@ Module functions
         Dim fullName = reader("fullName")
         Dim lastLogin = reader("lastLogin")
         Dim arrimage() As Byte = reader("passport")
+        Dim password = reader("password")
         connection.close()
-        Return Tuple.Create(fullName, lastLogin, arrimage)
+        Return Tuple.Create(fullName, lastLogin, arrimage, password)
     End Function
 
     Function getStudentProfile(ByVal studentId As String)
@@ -459,7 +460,6 @@ Public Sub getStudentID()
         Try
             Dim connection As MySql.Data.MySqlClient.MySqlConnection = functions.connection
             Dim command As New MySqlCommand("SELECT a.*, b.statusName, c.roleName FROM staff_tab a, setup_status_tab b, setup_role_tab c WHERE a.statusId = b.statusId AND a.roleId = c.roleId AND a.roleId > 1;", connection)
-            'command.Parameters.AddWithValue("@loginRoleId", loginRoleId)
             Dim adapter As New MySqlDataAdapter(command)
             Dim table As New DataTable()
             connection.Open()
@@ -549,14 +549,6 @@ Public Sub getStudentID()
 
             reader = command.ExecuteReader
             connection.Close()
-
-            'connection.open()
-            'query = "INSERT INTO `account_tab`(`account_id`, `customer_id`, `account_balance`, `loan_balance`, `created_time`) VALUES(@account_id, @customer_id, 00.0, 00.0, NOW())"
-            'command = New MySqlCommand(query, connection)
-            'command.Parameters.AddWithValue("@account_id", account_id)
-            'command.Parameters.AddWithValue("@customer_id", customer_id)
-            'reader = command.ExecuteReader
-            'onnection.Close()
 
             MessageBox.Show("SUCCESS! Student Registration Successfully Saved", "AfoTECH Attendance Management System", MessageBoxButtons.OK, MessageBoxIcon.Information)
             functions.clearFunction()
@@ -651,5 +643,22 @@ Public Sub getStudentID()
         End If
         Return e
     End Function
+
+    Function allCounts()
+        Dim connection = functions.connection
+        connection.Open()
+        query = "SELECT (SELECT COUNT(*) FROM staff_tab) AS totalStaff, (SELECT COUNT(*) FROM student_tab) AS totalStudent, (SELECT COUNT(*) FROM fingerprints_tab) AS totalEnrollment, (SELECT COUNT(*) FROM attendance_tab) AS totalAttendance;"
+        command = New MySqlCommand(query, connection)
+        reader = command.ExecuteReader
+        reader.Read()
+        Dim totalStaff = Convert.ToInt32(reader("totalStaff"))
+        Dim totalStudent = Convert.ToInt32(reader("totalStudent"))
+        Dim totalEnrollment = Convert.ToInt32(reader("totalEnrollment"))
+        Dim totalAttendance = Convert.ToInt32(reader("totalAttendance"))
+
+        connection.Close()
+        Return Tuple.Create(totalStaff, totalStudent, totalEnrollment, totalAttendance)
+    End Function
+
 
 End Module

@@ -25,19 +25,19 @@ Partial Class adminlogin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(adminlogin))
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.close_btn = New Guna.UI2.WinForms.Guna2Button()
         Me.forgotPasswordLabel = New System.Windows.Forms.LinkLabel()
         Me.loginBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.loginPasswordToggle = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.emailAddressTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.loginPasswordTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.loginPasswordToggle = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
-        Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.loginPasswordToggle, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -64,6 +64,19 @@ Partial Class adminlogin
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(83, 17)
         Me.Guna2HtmlLabel1.TabIndex = 1
         Me.Guna2HtmlLabel1.Text = "Admin Login"
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Guna2PictureBox1.Image = Global.WindowsApplication2.My.Resources.Resources.icon
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(3, 2)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(38, 43)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox1.TabIndex = 0
+        Me.Guna2PictureBox1.TabStop = False
         '
         'close_btn
         '
@@ -136,6 +149,19 @@ Partial Class adminlogin
         Me.Guna2GroupBox1.Size = New System.Drawing.Size(456, 310)
         Me.Guna2GroupBox1.TabIndex = 4
         Me.Guna2GroupBox1.Text = "Administrative Login"
+        '
+        'loginPasswordToggle
+        '
+        Me.loginPasswordToggle.BackColor = System.Drawing.Color.White
+        Me.loginPasswordToggle.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.loginPasswordToggle.Image = Global.WindowsApplication2.My.Resources.Resources.eyehide
+        Me.loginPasswordToggle.Location = New System.Drawing.Point(405, 176)
+        Me.loginPasswordToggle.Name = "loginPasswordToggle"
+        Me.loginPasswordToggle.ShadowDecoration.Parent = Me.loginPasswordToggle
+        Me.loginPasswordToggle.Size = New System.Drawing.Size(26, 26)
+        Me.loginPasswordToggle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.loginPasswordToggle.TabIndex = 12
+        Me.loginPasswordToggle.TabStop = False
         '
         'emailAddressTxt
         '
@@ -210,32 +236,6 @@ Partial Class adminlogin
         Me.Guna2HtmlLabel2.TabIndex = 2
         Me.Guna2HtmlLabel2.Text = "EMAIL ADDRESS"
         '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Guna2PictureBox1.Image = Global.WindowsApplication2.My.Resources.Resources.icon
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(3, 2)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(38, 43)
-        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox1.TabIndex = 0
-        Me.Guna2PictureBox1.TabStop = False
-        '
-        'loginPasswordToggle
-        '
-        Me.loginPasswordToggle.BackColor = System.Drawing.Color.White
-        Me.loginPasswordToggle.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.loginPasswordToggle.Image = Global.WindowsApplication2.My.Resources.Resources.eyehide
-        Me.loginPasswordToggle.Location = New System.Drawing.Point(405, 176)
-        Me.loginPasswordToggle.Name = "loginPasswordToggle"
-        Me.loginPasswordToggle.ShadowDecoration.Parent = Me.loginPasswordToggle
-        Me.loginPasswordToggle.Size = New System.Drawing.Size(26, 26)
-        Me.loginPasswordToggle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.loginPasswordToggle.TabIndex = 12
-        Me.loginPasswordToggle.TabStop = False
-        '
         'adminlogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -251,9 +251,9 @@ Partial Class adminlogin
         Me.TopMost = True
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GroupBox1.ResumeLayout(False)
         Me.Guna2GroupBox1.PerformLayout()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.loginPasswordToggle, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

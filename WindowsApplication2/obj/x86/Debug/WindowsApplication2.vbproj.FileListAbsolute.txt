@@ -62,10 +62,7 @@ C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Manag
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.regStudent.resources
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.viewadminrecord.resources
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.systemsettings.resources
-C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.setAttendanceTime.resources
-C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.setResetFingerprint.resources
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.setChangePassword.resources
-C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.setResetPassword.resources
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.regstudentfingerprint.resources
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.studentRecords.resources
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\AfooTECH_Attendance_Management_System\WindowsApplication2\obj\x86\Debug\WindowsApplication2.attendanceRecordForm.resources

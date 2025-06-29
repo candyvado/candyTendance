@@ -16,28 +16,26 @@ Public Class adminfinishresetpassword
 
     Private Sub finishPasswordToggle_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles finishPasswordToggle.Click
         If passwordVisible Then
-            ' 🔒 Hide password
+
             createPasswordTxt.UseSystemPasswordChar = True
-            finishPasswordToggle.Image = My.Resources.eyehide ' Replace with your hidden eye image
+            finishPasswordToggle.Image = My.Resources.eyehide
             passwordVisible = False
         Else
-            ' 👁️ Show password
+
             createPasswordTxt.UseSystemPasswordChar = False
-            finishPasswordToggle.Image = My.Resources.eyeopen ' Replace with your open eye image
+            finishPasswordToggle.Image = My.Resources.eyeopen
             passwordVisible = True
         End If
     End Sub
     Private Sub confirmFinishPasswordToggle_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles confirmFinishPasswordToggle.Click
         If passwordVisible Then
-            ' 🔒 Hide password
             confirmPasswordTxt.UseSystemPasswordChar = True
-            confirmFinishPasswordToggle.Image = My.Resources.eyehide ' Replace with your hidden eye image
+            confirmFinishPasswordToggle.Image = My.Resources.eyehide
             passwordVisible = False
         Else
-            ' 👁️ Show password
+
             confirmPasswordTxt.UseSystemPasswordChar = False
             confirmFinishPasswordToggle.Image = My.Resources.eyeopen
-            ' Replace with your open eye image
             passwordVisible = True
         End If
     End Sub
